@@ -10,20 +10,17 @@
           $nhap = $_POST["nhap"];
           $giamgia = $_POST["giamgia"];
 
-        echo tiendag($nhap,$giamgia);
-      }
+        if ($nhap < 1000000) {
+            $giamgia = (($nhap * 1) * 0.1) /10;
+            echo $giamgia;
+        } else if ($nhap > 1000000 && $nhap < 5000000) {
+            $giamgia = (($nhap * 2) * 0.1) /10;
+            echo $giamgia;
+        } else {
+            $giamgia = (($nhap * 3) * 0.1) /10;
+            echo $giamgia;
+        }
 
-      function tiendag($nhap,$giamgia) {
-          if ($giamgia <= 1000000) {
-              $khuyenmai = ($nhap / 10) * 0.1;
-          }
-          if ($giamgia >= 1000000 && $nhap <= 5000000){
-              $khuyenmai = ($nhap / 20) * 0.2;
-          }
-          if ($giamgia >= 5000001) {
-              $khuyenmai = ($nhap / 30) * 0.3;
-          }
-          return $khuyenmai;
       }
 
       ?>
