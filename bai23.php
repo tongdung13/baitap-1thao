@@ -27,7 +27,16 @@
   </form>
 
 
+  <!DOCTYPE html>
 
+  <html>
+  <head>
+      <title>Home page</title>
+  </head>
+  <body>
+  <a href="bai3.php">Đăng xuất</a>
+  </body>
+  </html>
 
 
 
